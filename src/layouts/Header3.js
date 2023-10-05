@@ -63,7 +63,7 @@ export default function Header3() {
                             {/* <!-- Extra Nav --> */}
                             <div className="extra-nav">
                                 <div className="extra-cell">
-                                    {/* <div className="search-inhead">
+                                    <div className="search-inhead">
                                         <div className="dz-quik-search On">
                                             <form action="#">
                                                 <input name="search" value="" type="text" className="form-control" placeholder="Search" />
@@ -73,7 +73,7 @@ export default function Header3() {
                                         <Link to={"#"} className="search-link" id="quik-search-btn">
                                             <i className="fas fa-search"></i>
                                         </Link>
-                                    </div> */}
+                                    </div>
                                     <Link to={"#"} className="btn btn-secondary d-xl-inline-block d-none btn-border btn-border-secondary m-r10 m-b10">REQUEST A QUOTE</Link>
                                 </div>
                             </div>
@@ -92,6 +92,7 @@ export default function Header3() {
                                                 <ul>
                                                     <li><Link to={"./about-me"}>About Me</Link></li>
                                                     <li><Link to={"./about-us"}>About Us</Link></li>
+                                                    <li><Link to={"./coming-soon"}>Coming Soon</Link></li>
                                                     <li><Link to={'./team'}>Team</Link></li>
                                                 </ul>
                                             </li>
@@ -99,26 +100,32 @@ export default function Header3() {
                                                 <ul>
                                                     <li><Link to={'company-history'}>Company History</Link></li>
                                                     <li><Link to={'contact-us'}>Contact Us</Link></li>
-                                                    {/* <li><Link to={'error-404'}>Error 404</Link></li> */}
+                                                    <li><Link to={'error-404'}>Error 404</Link></li>
                                                 </ul>
                                             </li>
                                             <li> <Link to={"#"}>Pages</Link>
                                                 <ul>
-                                                    {/* <li><Link to={'./gallery-grid-4'}>Gallery Grid 4</Link></li> */}
+                                                    <li><Link to={'./gallery-grid-4'}>Gallery Grid 4</Link></li>
                                                     <li><Link to={'./gallery-masonry'}>Gallery Masonry</Link></li>
                                                     <li><Link to={'./help-desk'}>Help Desk</Link></li>
                                                 </ul>
                                             </li>
                                             <li> <Link to={"#"}>Pages</Link>
                                                 <ul>
-                                                    {/* <li><Link to={'./pricing'}>Pricing Table</Link></li> */}
+                                                    <li><Link to={'./pricing'}>Pricing Table</Link></li>
                                                     <li><Link to={'./privacy-policy'}>Privacy Policy</Link></li>
                                                     <li><Link to={'./services'}>Services</Link></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={'./portfolio'}><span>Portfolio</span></Link></li>
+                                    <li className="sub-menu-down"><Link to={"#"}><span>Portfolio</span></Link>
+                                        <ul className="sub-menu">
+                                            <li><Link to={'./portfolio'}>Portfolio 1</Link></li>
+                                            <li><Link to={'./portfolio-collage'}>Portfolio Collage</Link></li>
+                                            <li><Link to={'./portfolio-details'}>Portfolio Details</Link></li>
+                                        </ul>
+                                    </li>
                                     <li className="sub-menu-down"><Link to={"#"}><span>Shop</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={'./shop-grid-3'}>Shop Grid 3</Link></li>
@@ -129,15 +136,15 @@ export default function Header3() {
                                             <li><Link to={'./login'}>Login</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"./blog-grid"}><span>Blog</span></Link>
-                                        {/* <ul className="sub-menu">
+                                    <li className="sub-menu-down"><Link to={"#"}><span>Blog</span></Link>
+                                        <ul className="sub-menu">
                                             <li><Link to={'./blog-grid'}>Blog Grid</Link></li>
                                             <li><Link to={'./blog-large-right-sidebar'}>Blog Right Sidebar</Link></li>
                                             <li><Link to={'./blog-list-sidebar'}>Blog List Sidebar</Link></li>
                                             <li><Link to={'./blog-list-left-sidebar'}>Blog List Left Sidebar</Link></li>
                                             <li><Link to={'./blog-details-post-wide'}>Post Wide View</Link></li>
                                             <li><Link to={'./blog-details'}>Blog Details</Link></li>
-                                        </ul> */}
+                                        </ul>
                                     </li>
                                 </ul>
                                 <div className="dz-social-icon">
