@@ -1,7 +1,6 @@
 import React from 'react';
 
 //Layouts
-import Header from './../layouts/CommanHeader';
 import Header3 from './../layouts/Header3';
 import Footer from './../layouts/Footer2';
 import PageTitle from './../layouts/PageTitle';
