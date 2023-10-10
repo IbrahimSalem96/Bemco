@@ -118,11 +118,16 @@ export default function Header3() {
                                                 </ul>
                                             </li> */}
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}><span>Portfolio</span></Link>
-                                        <ul className="sub-menu">
-                                            <li><Link to={'./portfolio'}>Portfolio 1</Link></li>
-                                            <li><Link to={'./portfolio-collage'}>Portfolio Collage</Link></li>
-                                            <li><Link to={'./portfolio-details'}>Portfolio Details</Link></li>
+                                    <li className="sub-menu-down"><Link to={"#"}><span>Services</span></Link>
+                                        <ul className="sub-menu" style={{ width: '270px' }}>
+                                            <li><Link to={'./portfolio'}>Operation & Maintenance</Link></li>
+                                            <li><Link to={'./portfolio'}>Testing & Commissioning </Link></li>
+                                            <li><Link to={'./portfolio'}>Retrofitting</Link></li>
+                                            <li><Link to={'./portfolio'}>HVAC & TAB</Link></li>
+                                            <li><Link to={'./portfolio'}>Facility Management</Link></li>
+                                            <li><Link to={'./portfolio'}>Engineering Services</Link></li>
+                                            <li><Link to={'./portfolio'}>Supply MV/LV & Control Panels</Link></li>
+                                            <li><Link to={'./portfolio'}>Supply Spare Parts</Link></li>
                                         </ul>
                                     </li>
                                     <li className="sub-menu-down"><Link to={"#"}><span>Shop</span></Link>
