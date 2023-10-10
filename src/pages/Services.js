@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 //Layouts
-import Header from './../layouts/CommanHeader';
 import Footer from './../layouts/Footer2';
 import PageTitle from './../layouts/PageTitle';
 import Header3 from './../layouts/Header3';

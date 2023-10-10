@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //Images
 import large1 from './../assets/images/blog/large/pic1.jpg';
@@ -8,25 +8,25 @@ import test1 from './../assets/images/testimonials/pic1.jpg';
 import test2 from './../assets/images/testimonials/pic2.jpg';
 import test3 from './../assets/images/testimonials/pic3.jpg';
 
-function CommentBlog({image, title}){
-    return(
+function CommentBlog({ image, title }) {
+    return (
         <>
-            <div className="comment-author vcard"> 
-                <img  className="avatar photo" src={image} alt="" /> 
+            <div className="comment-author vcard">
+                <img className="avatar photo" src={image} alt="" />
                 <cite className="fn">{title}</cite>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div className="reply"> 
+            <div className="reply">
                 <Link to={'#'} className="comment-reply-link"><i className="fa fa-reply"></i>Reply</Link>
             </div>
         </>
     )
 }
 
-export default function BlogDetailsWideSection(){
-    return(
+export default function BlogDetailsWideSection() {
+    return (
         <>
-        
+
             <div className="dz-card style-1 blog-single">
                 <div className="dz-media">
                     <img src={large1} alt="" />
@@ -84,7 +84,7 @@ export default function BlogDetailsWideSection(){
                     </div>
                 </div>
             </div>
-            
+
             {/* <!-- Author Profile --> */}
             <div className="author-box blog-user m-b60">
                 <div className="author-profile-info">
@@ -96,22 +96,22 @@ export default function BlogDetailsWideSection(){
                         <p>We were making our way to the Rila Mountains, where we were visiting the Rila Monastery where we enjoyed.</p>
                         <ul className="list-inline m-b0">
                             <li>
-                                <a href="https://www.facebook.com" target="_blank" className="btn-link">
+                                <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="btn-link">
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.twitter.com" target="_blank" className="btn-link">
+                                <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="btn-link">
                                     <i className="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.google.com" target="_blank" className="btn-link">
+                                <a href="https://www.google.com" target="_blank" rel="noreferrer" className="btn-link">
                                     <i className="fab fa-google-plus"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com" target="_blank" className="btn-link">
+                                <a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="btn-link">
                                     <i className="fab fa-youtube"></i>
                                 </a>
                             </li>
@@ -119,7 +119,7 @@ export default function BlogDetailsWideSection(){
                     </div>
                 </div>
             </div>
-            
+
             {/* <!-- Comments --> */}
             <div className="clear" id="comment-list">
                 <div className="comments-area" id="comments">
@@ -132,12 +132,12 @@ export default function BlogDetailsWideSection(){
                         <ol className="comment-list">
                             <li className="comment">
                                 <div className="comment-body">
-                                    <CommentBlog  image={test1} title='Celesto Anderson'/>
+                                    <CommentBlog image={test1} title='Celesto Anderson' />
                                 </div>
                                 <ol className="children">
                                     <li className="comment odd parent">
                                         <div className="comment-body">
-                                            <CommentBlog  image={test2} title='Jake Johnson'/>   
+                                            <CommentBlog image={test2} title='Jake Johnson' />
                                         </div>
                                         {/* <!-- list END --> */}
                                     </li>
@@ -146,7 +146,7 @@ export default function BlogDetailsWideSection(){
                             </li>
                             <li className="comment">
                                 <div className="comment-body">
-                                    <CommentBlog  image={test3} title='John Doe'/>
+                                    <CommentBlog image={test3} title='John Doe' />
                                 </div>
                             </li>
                         </ol>
@@ -155,14 +155,14 @@ export default function BlogDetailsWideSection(){
                         <div className="comment-respond" id="respond">
                             <div className="widget-title">
                                 <h4 className="title" id="reply-title">Leave Your Comment
-                                    <small><Link to={'#'} style={{display:'none'}}  id="cancel-comment-reply-link" rel="nofollow">Cancel reply</Link></small>
+                                    <small><Link to={'#'} style={{ display: 'none' }} id="cancel-comment-reply-link" rel="nofollow">Cancel reply</Link></small>
                                 </h4>
                                 <div className="dz-separator style-1 bg-primary mb-0"></div>
                             </div>
                             <form className="comment-form" id="commentform" method="post">
                                 <p className="comment-form-author">
                                     <label for="author">Name <span className="required">*</span></label>
-                                    <input type="text" name="Author"  placeholder="Author" id="author" />
+                                    <input type="text" name="Author" placeholder="Author" id="author" />
                                 </p>
                                 <p className="comment-form-email">
                                     <label for="email">Email <span className="required">*</span></label>
@@ -170,7 +170,7 @@ export default function BlogDetailsWideSection(){
                                 </p>
                                 <p className="comment-form-url">
                                     <label for="url">Website</label>
-                                    <input type="text"  value="url"  placeholder="Website"  name="url" id="url" />
+                                    <input type="text" value="url" placeholder="Website" name="url" id="url" />
                                 </p>
                                 <p className="comment-form-comment">
                                     <label for="comment">Comment</label>
@@ -185,8 +185,8 @@ export default function BlogDetailsWideSection(){
                     </div>
                 </div>
             </div>
-                        
-                    
+
+
         </>
     )
 }

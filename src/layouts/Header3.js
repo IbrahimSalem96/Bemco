@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from './../assets/images/logo.png';
-import logowhite from './../assets/images/logo-white.png';
+import logowhite from './../assets/Bemco/logo_bemco.png';
 
 export default function Header3() {
     //Sidebar
@@ -63,17 +63,17 @@ export default function Header3() {
                             {/* <!-- Extra Nav --> */}
                             <div className="extra-nav">
                                 <div className="extra-cell">
-                                    <div className="search-inhead">
+                                    {/* <div className="search-inhead">
                                         <div className="dz-quik-search On">
-                                            <form action="#">
+                                              <form action="#">
                                                 <input name="search" value="" type="text" className="form-control" placeholder="Search" />
                                                 <span id="quik-search-remove"><i className="ti-close"></i></span>
-                                            </form>
+                                            </form>  
                                         </div>
                                         <Link to={"#"} className="search-link" id="quik-search-btn">
                                             <i className="fas fa-search"></i>
                                         </Link>
-                                    </div>
+                                    </div> */}
                                     <Link to={"#"} className="btn btn-secondary d-xl-inline-block d-none btn-border btn-border-secondary m-r10 m-b10">REQUEST A QUOTE</Link>
                                 </div>
                             </div>

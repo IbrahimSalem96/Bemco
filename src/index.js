@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
     <React.StrictMode>
         <SimpleReactLightbox>
-            <App />            
+            <App />
         </SimpleReactLightbox>
     </React.StrictMode>,
     document.getElementById("root")
