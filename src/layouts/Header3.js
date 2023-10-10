@@ -65,7 +65,7 @@ export default function Header3() {
                                 <div className="extra-cell">
                                     {/* <div className="search-inhead">
                                         <div className="dz-quik-search On">
-                                              <form action="#">
+                                            <form action="#">
                                                 <input name="search" value="" type="text" className="form-control" placeholder="Search" />
                                                 <span id="quik-search-remove"><i className="ti-close"></i></span>
                                             </form>  
@@ -86,17 +86,17 @@ export default function Header3() {
                                 </div>
                                 <ul className="nav navbar-nav navbar navbar-left">
                                     <li className="sub-menu-down"><Link to={"./"}><span>Home</span></Link></li>
-                                    <li className="has-mega-menu"><Link to={"#"}>Pages</Link>
-                                        <ul className="mega-menu">
-                                            <li><Link to={"#"}>Pages</Link>
-                                                <ul>
-                                                    <li><Link to={"./about-me"}>About Me</Link></li>
-                                                    <li><Link to={"./about-us"}>About Us</Link></li>
-                                                    <li><Link to={"./coming-soon"}>Coming Soon</Link></li>
-                                                    <li><Link to={'./team'}>Team</Link></li>
-                                                </ul>
-                                            </li>
-                                            <li> <Link to={"#"}>Pages</Link>
+                                    <li className="sub-menu-down"><Link to={"#"}>Our Company</Link>
+                                        <ul className="sub-menu">
+                                            <li><Link to={"./about-me"}>Our Profile</Link></li>
+                                            <li><Link to={"./about-us"}>Our Commitment</Link></li>
+                                            <li><Link to={"./coming-soon"}>Quality & Safety Policy</Link></li>
+                                            <li><Link to={'./team'}>Certificates & Awards</Link></li>
+                                            <li><Link to={'./team'}>Our Partners</Link></li>
+                                            <li><Link to={'./team'}>Our Approvals</Link></li>
+                                            <li><Link to={'./team'}>Our Clients</Link></li>
+                                        </ul>
+                                        {/* <li> <Link to={"#"}>Pages</Link>
                                                 <ul>
                                                     <li><Link to={'company-history'}>Company History</Link></li>
                                                     <li><Link to={'contact-us'}>Contact Us</Link></li>
@@ -116,8 +116,7 @@ export default function Header3() {
                                                     <li><Link to={'./privacy-policy'}>Privacy Policy</Link></li>
                                                     <li><Link to={'./services'}>Services</Link></li>
                                                 </ul>
-                                            </li>
-                                        </ul>
+                                            </li> */}
                                     </li>
                                     <li className="sub-menu-down"><Link to={"#"}><span>Portfolio</span></Link>
                                         <ul className="sub-menu">
@@ -158,9 +157,9 @@ export default function Header3() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div >
                 {/* <!-- Main Header End --> */}
-            </header>
+            </header >
         </>
     )
 }
