@@ -37,7 +37,7 @@ export default function Header3() {
                     <div className="container-fluid">
                         <div className="d-flex justify-content-center align-items-center">
                             <div className="dz-topbar-center">
-                                <p className="help-text"><strong>Need Help :</strong>Bemco Services Division (BSD) - A WORD of Engineering Services, For Inquires Email: Services@Bemco.net </p>
+                                <p className="help-text" style={{ color: "#062355" }}><strong>Need Help :</strong>Bemco Services Division (BSD) - A WORD of Engineering Services, For Inquires Email: <a href='mailto:Services@Bemco.net' className='fw-bold' target='_blank'>Services@Bemco.net</a> </p>
                             </div>
                         </div>
                     </div>
@@ -74,13 +74,11 @@ export default function Header3() {
                                             <i className="fas fa-search"></i>
                                         </Link>
                                     </div> */}
-                                    <Link to={"#"} className="btn btn-secondary d-xl-inline-block d-none btn-border btn-border-secondary m-r10 m-b10">REQUEST A QUOTE</Link>
+                                    <a href={"#Contact_Us"} className="btn text-white fw-bold d-xl-inline-block d-none btn-border   m-r10 m-b10" style={{ backgroundColor: '#ff5317' }}>Contact Us</a>
                                 </div>
                             </div>
                             {/* <!-- Extra Nav --> */}
-
-                            <div className={`header-nav navbar-collapse justify-content-start ${openToggleBtn ? ' collapse show' : ' collapse'}`}
-                            >
+                            <div className={`header-nav navbar-collapse justify-content-start ${openToggleBtn ? ' collapse show' : ' collapse'}`}>
                                 <div className="logo-header logo-dark">
                                     <Link to={"./"}><img src={logo} alt="" /></Link>
                                 </div>
@@ -118,20 +116,20 @@ export default function Header3() {
                                                 </ul>
                                             </li> */}
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Services</span></Link>
+                                    <li className="sub-menu-down"><Link to={"./services"} classList="arrow"><span>Services</span></Link>
                                         <ul className="sub-menu" style={{ width: '270px' }}>
-                                            <li><Link to={'./portfolio'}>Operation & Maintenance</Link></li>
-                                            <li><Link to={'./portfolio'}>Testing & Commissioning </Link></li>
-                                            <li><Link to={'./portfolio'}>Installation & Retrofitting</Link></li>
-                                            <li><Link to={'./portfolio'}>HVAC & TAB</Link></li>
-                                            <li><Link to={'./portfolio'}>Facility Management</Link></li>
-                                            <li><Link to={'./portfolio'}>Engineering Services</Link></li>
-                                            <li><Link to={'./portfolio'}>Supply MV/LV & Control Panels</Link></li>
-                                            <li><Link to={'./portfolio'}>Supply Spare Parts</Link></li>
+                                            <li><Link to={'./operation-maintenance'}>Operation & Maintenance</Link></li>
+                                            <li><Link to={'./testing-commissioning'}>Testing & Commissioning</Link></li>
+                                            <li><Link to={'./installation-retrofitting'}>Installation & Retrofitting</Link></li>
+                                            <li><Link to={'./HVAC-TAB'}>HVAC & TAB</Link></li>
+                                            <li><Link to={'./facility-management'}>Facility Management</Link></li>
+                                            <li><Link to={'./engineering-services'}>Engineering Services</Link></li>
+                                            <li><Link to={'./supply-MV/LV'}>Supply MV/LV & Control Panels</Link></li>
+                                            <li><Link to={'./supply-spare-parts'}>Supply Spare Parts</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}>Why Us</Link></li>
-                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Projects</span></Link>
+                                    <li className="sub-menu-down"><Link to={"#"}>Why Us ?</Link></li>
+                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Key Projects</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={'./shop-grid-3'}>Shop Grid 3</Link></li>
                                             <li><Link to={'./product-details'}>Product Details</Link></li>
@@ -140,16 +138,17 @@ export default function Header3() {
                                             <li><Link to={'./shop-cart'}>Cart</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}>Blog</Link>
-                                        <ul className="sub-menu">
+                                    <li className="sub-menu-down"><Link to={"./blog-list-sidebar"}>Articles</Link>
+                                        {/* <ul className="sub-menu">
                                             <li><Link to={'./blog-grid'}>Blog Grid</Link></li>
                                             <li><Link to={'./blog-large-right-sidebar'}>Blog Right Sidebar</Link></li>
                                             <li><Link to={'./blog-list-sidebar'}>Blog List Sidebar</Link></li>
                                             <li><Link to={'./blog-list-left-sidebar'}>Blog List Left Sidebar</Link></li>
                                             <li><Link to={'./blog-details-post-wide'}>Post Wide View</Link></li>
                                             <li><Link to={'./blog-details'}>Blog Details</Link></li>
-                                        </ul>
+                                        </ul> */}
                                     </li>
+                                    <li className="sub-menu-down"><Link to={"./"}>Home</Link></li>
                                 </ul>
                                 <div className="dz-social-icon">
                                     <ul>

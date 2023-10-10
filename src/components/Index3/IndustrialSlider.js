@@ -19,10 +19,14 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 
 
 const industryBlog = [
-	{ title: 'Testing and Commissioning', image: pic1 },
-	{ title: 'Installation and Retrofit', image: pic2 },
-	{ title: 'Operation and Maintenance', image: pic3 },
-	{ title: 'Plant Performance and Diagnostic', image: pic4 },
+	{ title: 'Operation & Maintenance', image: pic1 },
+	{ title: 'Testing & Commissioning', image: pic2 },
+	{ title: 'Installation & Retrofitting', image: pic3 },
+	{ title: 'HVAC & TAB', image: pic4 },
+	{ title: 'Facility Management', image: pic4 },
+	{ title: 'Engineering Services', image: pic4 },
+	{ title: 'Supply MV/LV & Control Panels', image: pic4 },
+	{ title: 'Supply Spare Parts', image: pic4 },
 ];
 
 

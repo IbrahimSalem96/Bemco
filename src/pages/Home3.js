@@ -109,7 +109,7 @@ function Home3() {
                                     <h2 className="title text-white">innovating to meet Tomorrow’s Challenges.</h2>
                                     <p className="text-white">We’re continually working to change the way people think about and engage with our products. A new story is beginning with a new vision for the future, an expertise across the entire industry cycle and the ambition</p>
                                 </div>
-                                <Link to={"./about-us"} className="btn btn-primary btn-border btn-border-white m-r10 m-b10">DOWNLOAD OUR BROCHURE</Link>
+                                <Link to={"./about-us"} className="btn btn-primary btn-border btn-border-white m-r10 m-b10" id="Contact_Us">DOWNLOAD OUR BROCHURE</Link>
                             </div>
                             <div className="col-lg-5 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                 <div className="video-box rounded overflow-hidden overlay-effect">

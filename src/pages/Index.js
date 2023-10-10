@@ -37,6 +37,18 @@ import BlogListLeftSidebar from './BlogListLeftSidebar';
 import BlogDetailsPostWide from './BlogDetailsPostWide';
 import BlogDetails from './BlogDetails';
 
+import {
+	EngineeringServices,
+	FacilityManagement,
+	InstallationRetrofitting,
+	HVACTAB,
+	OperationMaintenance,
+	SupplyControlPanels,
+	SupplySpareParts,
+	TestingCommissioning
+} from '../pages/Services/index'
+
+
 function Index() {
 	return (
 		<BrowserRouter >
@@ -58,6 +70,18 @@ function Index() {
 					<Route path='/pricing' exact component={Pricing} />
 					<Route path='/privacy-policy' exact component={PrivacyPolicy} />
 					<Route path='/services' exact component={Services} />
+					<Route path='/operation-maintenance' exact component={OperationMaintenance} />
+					<Route path='/testing-commissioning' exact component={TestingCommissioning} />
+					<Route path='/installation-retrofitting' exact component={InstallationRetrofitting} />
+					<Route path='/HVAC-TAB' exact component={HVACTAB} />
+					<Route path='/facility-management' exact component={FacilityManagement} />
+					<Route path='/engineering-services' exact component={EngineeringServices} />
+					<Route path='/supply-MV/LV' exact component={SupplyControlPanels} />
+					<Route path='/supply-spare-parts' exact component={SupplySpareParts} />
+
+
+
+
 					<Route path='/team' exact component={Team} />
 					<Route path='/portfolio' exact component={Portfolio} />
 					<Route path='/portfolio-details' exact component={PortfolioDetails} />
