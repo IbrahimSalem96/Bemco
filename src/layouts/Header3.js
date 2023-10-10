@@ -37,7 +37,7 @@ export default function Header3() {
                     <div className="container-fluid">
                         <div className="d-flex justify-content-center align-items-center">
                             <div className="dz-topbar-center">
-                                <p className="help-text"><strong>Need Help :</strong>Providing Innovative and Sustainable Solutions, Call (123) 123456789</p>
+                                <p className="help-text"><strong>Need Help :</strong>Bemco Services Division (BSD) - A WORD of Engineering Services, For Inquires Email: Services@Bemco.net </p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function Header3() {
                         <div className="container-fluid clearfix">
                             {/* <!-- Website Logo --> */}
                             <div className="logo-header mostion logo-white">
-                                <Link to={"./"}><img src={logowhite} alt="" /></Link>
+                                <Link to={"./"}><img src={logowhite} alt="Logo" width='90' height='9d0' /></Link>
                             </div>
                             {/* <!-- Nav Toggle Button --> */}
                             <button
@@ -85,8 +85,8 @@ export default function Header3() {
                                     <Link to={"./"}><img src={logo} alt="" /></Link>
                                 </div>
                                 <ul className="nav navbar-nav navbar navbar-left">
-                                    <li className="sub-menu-down"><Link to={"./"}><span>Home</span></Link></li>
-                                    <li className="sub-menu-down"><Link to={"#"}>Our Company</Link>
+                                    <li className="sub-menu-down"><Link to={"./"}>Home</Link></li>
+                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Company</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={"./about-me"}>Our Profile</Link></li>
                                             <li><Link to={"./about-us"}>Our Commitment</Link></li>
@@ -118,11 +118,11 @@ export default function Header3() {
                                                 </ul>
                                             </li> */}
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}><span>Services</span></Link>
+                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Services</span></Link>
                                         <ul className="sub-menu" style={{ width: '270px' }}>
                                             <li><Link to={'./portfolio'}>Operation & Maintenance</Link></li>
                                             <li><Link to={'./portfolio'}>Testing & Commissioning </Link></li>
-                                            <li><Link to={'./portfolio'}>Retrofitting</Link></li>
+                                            <li><Link to={'./portfolio'}>Installation & Retrofitting</Link></li>
                                             <li><Link to={'./portfolio'}>HVAC & TAB</Link></li>
                                             <li><Link to={'./portfolio'}>Facility Management</Link></li>
                                             <li><Link to={'./portfolio'}>Engineering Services</Link></li>
@@ -130,17 +130,17 @@ export default function Header3() {
                                             <li><Link to={'./portfolio'}>Supply Spare Parts</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}><span>Shop</span></Link>
+                                    <li className="sub-menu-down"><Link to={"#"}>Why Us</Link></li>
+                                    <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Projects</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={'./shop-grid-3'}>Shop Grid 3</Link></li>
                                             <li><Link to={'./product-details'}>Product Details</Link></li>
                                             <li><Link to={'./shop-wishlist'}>Wishlist</Link></li>
                                             <li><Link to={'./shop-checkout'}>Checkout</Link></li>
                                             <li><Link to={'./shop-cart'}>Cart</Link></li>
-                                            <li><Link to={'./login'}>Login</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}><span>Blog</span></Link>
+                                    <li className="sub-menu-down"><Link to={"#"}>Blog</Link>
                                         <ul className="sub-menu">
                                             <li><Link to={'./blog-grid'}>Blog Grid</Link></li>
                                             <li><Link to={'./blog-large-right-sidebar'}>Blog Right Sidebar</Link></li>

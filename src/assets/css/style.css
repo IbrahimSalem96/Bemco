@@ -33008,10 +33008,11 @@ pre {
   }
 }
 
+.header-nav .nav>li.sub-menu-down a span {
+  position: relative;
+}
 
-
-.header-nav .nav>li.sub-menu-down>a:after,
-.header-nav .nav>li.has-mega-menu>a:after {
+.header-nav .nav>li.sub-menu-down a span:after {
   content: "\f078";
   font-size: 9px;
   margin-left: 5px;
@@ -33020,6 +33021,17 @@ pre {
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
 }
+
+/* .header-nav .nav>li.sub-menu-down>a:after,
+.header-nav .nav>li.has-mega-menu>a:after {
+  content: "\f078";
+  font-size: 9px;
+  margin-left: 5px;
+  margin-top: 0;
+  vertical-align: middle;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+} */
 
 @media only screen and (max-width: 991px) {
 
@@ -42340,7 +42352,7 @@ footer .dz-social-icon ul li {
 }
 
 .boxed .main-slider3 {
-  padding: 0px 35px 30px 0px;
+  padding: 35px 35px 35px 35px;
 }
 
 .boxed .site-header.style-3 .extra-nav {
