@@ -22,7 +22,7 @@ const industryBlog = [
 	{ title: 'Testing and Commissioning', image: pic1 },
 	{ title: 'Installation and Retrofit', image: pic2 },
 	{ title: 'Operation and Maintenance', image: pic3 },
-	// { title: 'Plant Performance and Diagnostic', image: pic4 },
+	{ title: 'Plant Performance and Diagnostic', image: pic4 },
 ];
 
 
