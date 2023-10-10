@@ -77,7 +77,7 @@ function Index() {
 					<Route path='*' exact component={ErrorPage} />
 				</Switch>
 				<ScrollToTop />
-				<ScrollToTop2 className="styles_scroll-to-top__2A70v  fas fa-arrow-up scroltop" smooth />
+				<ScrollToTop2 className="fas fa-arrow-up scroltop" smooth />
 			</div>
 			<DarkTheme />
 
