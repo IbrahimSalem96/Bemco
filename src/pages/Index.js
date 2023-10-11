@@ -49,6 +49,15 @@ import {
 	TestingCommissioning
 } from '../pages/Services/index'
 
+import {
+	CertificatesAwards,
+	OurApprovals,
+	OurClients,
+	OurCommitment,
+	OurPartners,
+	QualitySafetyPolicy,
+} from './../pages/Our Company/'
+
 
 function Index() {
 	return (
@@ -57,6 +66,14 @@ function Index() {
 				<Switch>
 					{/* <Route path='/index-2' exact component={Home2} /> */}
 					<Route path='/' exact component={Home3} />
+
+					<Route path='/certificates-awards' exact component={CertificatesAwards} />
+					<Route path='/our-approvals' exact component={OurApprovals} />
+					<Route path='/our-clients' exact component={OurClients} />
+					<Route path='/our-commitment' exact component={OurCommitment} />
+					<Route path='/our-partners' exact component={OurPartners} />
+					<Route path='/quality-safety-policy' exact component={QualitySafetyPolicy} />
+
 					{/* <Route path='/index-4' exact component={Home4} /> */}
 					{/* <Route path='/index-5' exact component={Home5} /> */}
 					<Route path='/why-us' exact component={WhyUs} />
@@ -80,10 +97,6 @@ function Index() {
 					<Route path='/facility-management' exact component={FacilityManagement} />
 					<Route path='/engineering-services' exact component={EngineeringServices} />
 					<Route path='/supply-spare-parts' exact component={SupplySpareParts} />
-
-
-
-
 					{/* <Route path='/team' exact component={Team} /> */}
 					<Route path='/portfolio' exact component={Portfolio} />
 					<Route path='/portfolio-details' exact component={PortfolioDetails} />

@@ -87,12 +87,14 @@ export default function Header3() {
                                     <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Company</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={"./about-us"}>Our Profile</Link></li>
-                                            <li><Link to={"./about-us"}>Our Commitment</Link></li>
-                                            <li><Link to={"./coming-soon"}>Quality & Safety Policy</Link></li>
-                                            <li><Link to={'./team'}>Certificates & Awards</Link></li>
-                                            <li><Link to={'./team'}>Our Partners</Link></li>
-                                            <li><Link to={'./team'}>Our Approvals</Link></li>
-                                            <li><Link to={'./team'}>Our Clients</Link></li>
+                                            <li><Link to={"./our-commitment"}>Our Commitment</Link></li>
+                                            <li><Link to={"./quality-safety-policy"}>Quality & Safety Policy</Link></li>
+                                            <li><Link to={'./certificates-awards'}>Certificates & Awards</Link></li>
+                                            <li><Link to={'./our-partners'}>Our Partners</Link></li>
+                                            <li><Link to={'./our-approvals'}>Our Approvals</Link></li>
+                                            <li><Link to={'./our-clients'}>Our Clients</Link></li>
+
+
                                         </ul>
                                         {/* <li> <Link to={"#"}>Pages</Link>
                                                 <ul>
