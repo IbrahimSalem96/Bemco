@@ -73,7 +73,6 @@ function Index() {
 					<Route path='/our-commitment' exact component={OurCommitment} />
 					<Route path='/our-partners' exact component={OurPartners} />
 					<Route path='/quality-safety-policy' exact component={QualitySafetyPolicy} />
-
 					{/* <Route path='/index-4' exact component={Home4} /> */}
 					{/* <Route path='/index-5' exact component={Home5} /> */}
 					<Route path='/why-us' exact component={WhyUs} />
@@ -83,8 +82,8 @@ function Index() {
 					<Route path='/company-history' exact component={CompanyHistory} /> */}
 					<Route path='/contact-us' exact component={ContactUs} />
 					<Route path='/error-404' exact component={ErrorPage} />
-					{/* <Route path='/gallery-grid-4' exact component={GalleryGrid4} />
-					<Route path='/gallery-masonry' exact component={GalleryMasonry} />
+					<Route path='/gallery-grid-4' exact component={GalleryGrid4} />
+					{/* <Route path='/gallery-masonry' exact component={GalleryMasonry} />
 					<Route path='/help-desk' exact component={HelpDesk} /> */}
 					{/* <Route path='/pricing' exact component={Pricing} /> */}
 					{/* <Route path='/privacy-policy' exact component={PrivacyPolicy} /> */}

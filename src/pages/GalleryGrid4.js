@@ -1,4 +1,4 @@
-import { SRLWrapper , useLightbox} from "simple-react-lightbox";
+import { SRLWrapper, useLightbox } from "simple-react-lightbox";
 
 //Layouts
 import Header from './../layouts/CommanHeader';
@@ -21,39 +21,39 @@ import pic9 from './../assets/images/gallery/pic9.jpg';
 
 
 const GallerySection = [
-    {image: pic1},
-    {image: pic2},
-    {image: pic3},
-    {image: pic4},
-    {image: pic5},
-    {image: pic6},
-    {image: pic7},
-    {image: pic8},
-    {image: pic9},
-    {image: pic1},
-    {image: pic2},
-    {image: pic3},
+    { image: pic1 },
+    { image: pic2 },
+    { image: pic3 },
+    { image: pic4 },
+    { image: pic5 },
+    { image: pic6 },
+    { image: pic7 },
+    { image: pic8 },
+    { image: pic9 },
+    { image: pic1 },
+    { image: pic2 },
+    { image: pic3 },
 ];
 
 
 
-function GalleryGrid4(props){
+function GalleryGrid4(props) {
     const { openLightbox, } = useLightbox()
     const options = {
-        settings:{
-            slideAnimationType: 'slide',            
+        settings: {
+            slideAnimationType: 'slide',
         }
     };
-    return(
+    return (
         <>
             <Header />
             <div className="page-content bg-white">
-                <PageTitle  title='Gallery Grid 4' parentPage='Home' childPage='Pages' />
+                <PageTitle title='Gallery Grid 4' parentPage='Home' childPage='Pages' />
                 <section className="content-inner">
                     <div className="container">
                         <SRLWrapper options={options}   >
                             <div className="row lightgallery">
-                                {GallerySection.map((data, ind)=>(
+                                {GallerySection.map((data, ind) => (
                                     <div className="col-lg-3 col-md-6 m-b30" key={ind}>
                                         <div className="dz-box style-4">
                                             <div className="dz-media height-sm">
@@ -61,20 +61,20 @@ function GalleryGrid4(props){
                                             </div>
                                             <span data-exthumbimage={data.image} data-src={data.image} className="view-btn lightimg" title=""
                                                 onClick={() => openLightbox(ind)}
-                                                ><i className="fas fa-plus"></i>
+                                            ><i className="fas fa-plus"></i>
                                             </span>
                                         </div>
                                     </div>
                                 ))}
-                            </div>   
-                        </SRLWrapper>    
+                            </div>
+                        </SRLWrapper>
                     </div>
-                </section>        
+                </section>
                 <section className="section-full bg-white dz-subscribe style-1">
                     <FooterSingUp />
-                </section>  
+                </section>
             </div>
-            <Footer />    
+            <Footer />
         </>
     )
 }
