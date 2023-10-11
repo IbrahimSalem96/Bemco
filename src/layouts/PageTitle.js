@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bnr1 from './../assets/Bemco/services/inner.jpg';
+import bnr1 from './../assets/Bemco/whyUs/why-us.jpg';
 
 const PageTitle = ({ title, parentPage, childPage }) => {
     return (

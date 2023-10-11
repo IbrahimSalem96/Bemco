@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
 
 //Import Layout
 import Header3 from './../layouts/Header3';
@@ -9,12 +10,12 @@ import VideoPopup from './../components/VideoPopup';
 
 //Import Components
 import Home3BannerSlider from './../components/Index3/Home3BannerSlider';
-import AboutUsSectionIndex3 from './../components/Index3/AboutUsSectionIndex3';
 import AboutSlider from './../components/Index3/AboutSlider';
 import TestimonialSlider from './../components/TestimonialSlider';
 import ClientsSlider from './../components/ClientsSlider';
 import IndustrialSlider2 from './../components/Index3/IndustrialSlider2';
 import AccordionSection from './../components/Index3/AccordionSection';
+import IndustrialSlider from './../components/Index3/IndustrialSlider'
 
 //Images
 import bg9 from './../assets/images/background/bg9.jpg';
@@ -57,9 +58,27 @@ function Home3() {
                 </div>
                 <section className="content-inner-1 section" style={{ backgroundImage: 'url(' + bg9 + ')', backgroundSize: 'cover', backgroundPosition: 'top' }}>
                     <div className="container">
-                        <AboutUsSectionIndex3 />
+                        <div className="row">
+                            <div className="col-lg-6 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                <div className="section-head style-1">
+                                    <h3 className="title m-b30">We Are Always Best For Industrial Solution</h3>
+                                    <div className="exp-row">
+                                        <h2 className="year counter"> <CountUp end={18} duration={5} /> </h2>
+                                        <p>YEARS OF <span>EXPRIENCE</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                <p className="m-b30">
+                                    BEMCO SERVICES is a highly experienced company that has evolved from the renowned Arabian Bemco Contracting Co. With over 15 years of diverse expertise in the industry, BEMCO SERVICES is specifically designed to meet the specialized technical requirements of the market. This includes catering to HV & MV Substations, Steam and gas turbine power Projects, Industrial Projects, and Electro-Mechanical Projects. The company offers a wide range of services such as installation, protection & control, testing and commissioning, start-up, and operation and maintenance. With its strong foundation and commitment to excellence, BEMCO SERVICES is well-equipped to fulfill the needs of its clients in various fields.
+
+                                </p>
+                                <Link to={"./about-us"} className="btn btn-primary btn-border btn-border m-r10 m-b10">More About us</Link>
+                            </div>
+                        </div>
+                        <IndustrialSlider />
                     </div>
-                </section>
+                </section >
                 <section className="content-inner-4 about-wrapper">
                     <AboutSlider />
                 </section>
@@ -196,34 +215,7 @@ function Home3() {
                         <Link to={"./about-us"} className="btn btn-primary btn-border-white btn-border m-r10 m-b10" >ABOUT US</Link>
                     </div>
                 </section>
-                <section className="content-inner">
-                    <div className="container">
-                        <div className="section-head style-1 text-center">
-                            <h6 className="sub-title text-primary">Dedicated Customer Teams & An Agile Services</h6>
-                            <h2 className="title m-b20">Innovating to meet</h2>
-                        </div>
-                        <div className="row justify-content-center">
-                            {teamblog.map((item, index) => (
-                                <div className="col-lg-4 col-md-6" key={index}>
-                                    <div className="dz-team style-2 m-b30">
-                                        <div className="dz-media">
-                                            <img src={item.image} alt="" />
-                                            <ul className="team-social">
-                                                <li><a href="https://twitter.com/" className="twitter"><i className="fab fa-twitter"></i></a></li>
-                                                <li><a href="https://www.facebook.com/" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="https://in.pinterest.com/" className="pinterest"><i className="fab fa-pinterest-p"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div className="dz-content">
-                                            <h4 className="dz-name">{item.title}</h4>
-                                            <h6 className="dz-position">Contractor</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+
                 <section className="content-inner overlay-gradient-sec" style={{ backgroundImage: 'url(' + slider3 + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="container">
                         <div className="row">
@@ -277,7 +269,7 @@ function Home3() {
                         </form>
                     </div>
                 </section>
-            </div>
+            </div >
             <Footer3 />
         </>
     )

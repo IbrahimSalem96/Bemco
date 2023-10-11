@@ -16987,7 +16987,7 @@ button:focus {
 .overlay-black-light:before,
 .overlay-black-middle:before,
 .overlay-black-dark:before {
-  background: #131821;
+  background: #131821d1;
 }
 
 .overlay-gradient-light:before,

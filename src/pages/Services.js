@@ -8,20 +8,24 @@ import Header3 from './../layouts/Header3';
 import FooterSingUp from './../components/FooterSingUp';
 
 //images
-import pic1 from './../assets/Bemco/pic1.jpg';
-import pic2 from './../assets/Bemco/pic2.jpg';
-import pic3 from './../assets/Bemco/pic3.jpg';
-import pic4 from './../assets/Bemco/pic4.jpeg';
+import pic1 from './../assets/Bemco/services/pic1.jpg'
+import pic2 from './../assets/Bemco/services/pic2.jpg'
+import pic3 from './../assets/Bemco/services/pic3.jpg'
+import pic4 from './../assets/Bemco/services/pic4.jpg'
+import pic5 from './../assets/Bemco/services/pic5.jpg'
+import pic6 from './../assets/Bemco/services/pic6.jpg'
+import pic7 from './../assets/Bemco/services/pic7.jpg'
+import pic8 from './../assets/Bemco/services/pic8.png'
 
 const serviceData = [
-    { title: 'Operation & Maintenance', image: pic1 },
-    { title: 'Testing & Commissioning', image: pic2 },
-    { title: 'Installation & Retrofitting', image: pic3 },
-    { title: 'HVAC & TAB', image: pic4 },
-    { title: 'Facility Management', image: pic4 },
-    { title: 'Engineering Services', image: pic4 },
-    { title: 'Supply MV/LV & Control Panels', image: pic4 },
-    { title: 'Supply Spare Parts', image: pic4 },
+    { title: 'Operation & Maintenance', image: pic1, page: '/operation-maintenance' },
+    { title: 'Testing & Commissioning', image: pic2, page: '/testing-commissioning' },
+    { title: 'Installation & Retrofitting', image: pic3, page: '/installation-retrofitting' },
+    { title: 'HVAC & TAB', image: pic4, page: '/supply-MV/LV' },
+    { title: 'Facility Management', image: pic5, page: '/HVAC-TAB' },
+    { title: 'Engineering Services', image: pic6, page: '/facility-management' },
+    { title: 'Supply MV/LV & Control Panels', image: pic7, page: '/engineering-services' },
+    { title: 'Supply Spare Parts', image: pic8, page: '/supply-spare-parts' },
 ];
 
 function Services() {
@@ -47,7 +51,7 @@ function Services() {
                                             <img src={data.image} alt={data.title} style={{ height: '25vh' }} />
                                         </div>
                                         <div className="dz-bottom">
-                                            <Link to={"#"} className="btn-link">READ MORE<i className="fas fa-arrow-right"></i></Link>
+                                            <Link to={data.page} className="btn-link">READ MORE<i className="fas fa-arrow-right"></i></Link>
                                         </div>
                                     </div>
                                 </div>

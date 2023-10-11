@@ -86,7 +86,7 @@ export default function Header3() {
                                     <li className="sub-menu-down"><Link to={"./"}>Home</Link></li>
                                     <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Company</span></Link>
                                         <ul className="sub-menu">
-                                            <li><Link to={"./about-me"}>Our Profile</Link></li>
+                                            <li><Link to={"./about-us"}>Our Profile</Link></li>
                                             <li><Link to={"./about-us"}>Our Commitment</Link></li>
                                             <li><Link to={"./coming-soon"}>Quality & Safety Policy</Link></li>
                                             <li><Link to={'./team'}>Certificates & Awards</Link></li>
@@ -128,7 +128,7 @@ export default function Header3() {
                                             <li><Link to={'./supply-spare-parts'}>Supply Spare Parts</Link></li>
                                         </ul>
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"#"}>Why Us ?</Link></li>
+                                    <li className="sub-menu-down"><Link to={"/why-us"}>Why Us ?</Link></li>
                                     <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Key Projects</span></Link>
                                         <ul className="sub-menu">
                                             <li><Link to={'./shop-grid-3'}>Shop Grid 3</Link></li>
@@ -148,7 +148,7 @@ export default function Header3() {
                                             <li><Link to={'./blog-details'}>Blog Details</Link></li>
                                         </ul> */}
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"./"}>Home</Link></li>
+                                    <li className="sub-menu-down"><Link to={"./"}>Careers</Link></li>
                                 </ul>
                                 <div className="dz-social-icon">
                                     <ul>

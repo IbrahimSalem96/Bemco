@@ -36,6 +36,7 @@ import BlogListSidebar from './BlogListSidebar';
 import BlogListLeftSidebar from './BlogListLeftSidebar';
 import BlogDetailsPostWide from './BlogDetailsPostWide';
 import BlogDetails from './BlogDetails';
+import WhyUs from './WhyUs'
 
 import {
 	EngineeringServices,
@@ -58,31 +59,32 @@ function Index() {
 					<Route path='/' exact component={Home3} />
 					{/* <Route path='/index-4' exact component={Home4} /> */}
 					{/* <Route path='/index-5' exact component={Home5} /> */}
+					<Route path='/why-us' exact component={WhyUs} />
 					<Route path='/about-us' exact component={AboutUs} />
 					<Route path='/about-me' exact component={AboutMe} />
-					<Route path='/coming-soon' exact component={ComingSoon} />
-					<Route path='/company-history' exact component={CompanyHistory} />
+					{/* <Route path='/coming-soon' exact component={ComingSoon} />
+					<Route path='/company-history' exact component={CompanyHistory} /> */}
 					<Route path='/contact-us' exact component={ContactUs} />
 					<Route path='/error-404' exact component={ErrorPage} />
-					<Route path='/gallery-grid-4' exact component={GalleryGrid4} />
+					{/* <Route path='/gallery-grid-4' exact component={GalleryGrid4} />
 					<Route path='/gallery-masonry' exact component={GalleryMasonry} />
-					<Route path='/help-desk' exact component={HelpDesk} />
-					<Route path='/pricing' exact component={Pricing} />
-					<Route path='/privacy-policy' exact component={PrivacyPolicy} />
+					<Route path='/help-desk' exact component={HelpDesk} /> */}
+					{/* <Route path='/pricing' exact component={Pricing} /> */}
+					{/* <Route path='/privacy-policy' exact component={PrivacyPolicy} /> */}
 					<Route path='/services' exact component={Services} />
 					<Route path='/operation-maintenance' exact component={OperationMaintenance} />
 					<Route path='/testing-commissioning' exact component={TestingCommissioning} />
 					<Route path='/installation-retrofitting' exact component={InstallationRetrofitting} />
+					<Route path='/supply-MV/LV' exact component={SupplyControlPanels} />
 					<Route path='/HVAC-TAB' exact component={HVACTAB} />
 					<Route path='/facility-management' exact component={FacilityManagement} />
 					<Route path='/engineering-services' exact component={EngineeringServices} />
-					<Route path='/supply-MV/LV' exact component={SupplyControlPanels} />
 					<Route path='/supply-spare-parts' exact component={SupplySpareParts} />
 
 
 
 
-					<Route path='/team' exact component={Team} />
+					{/* <Route path='/team' exact component={Team} /> */}
 					<Route path='/portfolio' exact component={Portfolio} />
 					<Route path='/portfolio-details' exact component={PortfolioDetails} />
 					<Route path='/shop-grid-3' exact component={ShopGrid3} />
@@ -92,11 +94,11 @@ function Index() {
 					<Route path='/shop-cart' exact component={ShopCart} />
 					<Route path='/login' exact component={Login} />
 					<Route path='/portfolio-collage' exact component={PortfolioCollage} />
-					<Route path='/blog-grid' exact component={BlogGrid} />
-					<Route path='/blog-large-right-sidebar' exact component={BlogRightSidebar} />
+					{/* <Route path='/blog-grid' exact component={BlogGrid} /> */}
+					{/* <Route path='/blog-large-right-sidebar' exact component={BlogRightSidebar} /> */}
 					<Route path='/blog-list-sidebar' exact component={BlogListSidebar} />
-					<Route path='/blog-list-left-sidebar' exact component={BlogListLeftSidebar} />
-					<Route path='/blog-details-post-wide' exact component={BlogDetailsPostWide} />
+					{/* <Route path='/blog-list-left-sidebar' exact component={BlogListLeftSidebar} />
+					<Route path='/blog-details-post-wide' exact component={BlogDetailsPostWide} /> */}
 					<Route path='/blog-details' exact component={BlogDetails} />
 					<Route path='*' exact component={ErrorPage} />
 				</Switch>
