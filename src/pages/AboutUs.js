@@ -24,7 +24,6 @@ const radialBlog = [
 function AboutUs() {
     return (
         <>
-            {/* <Header /> */}
             <Header3 />
             <div className="page-content bg-white">
                 <PageTitle title='Our Profile' parentPage='Home' childPage='Pages' />

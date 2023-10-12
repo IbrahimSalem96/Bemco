@@ -24,17 +24,9 @@ import bg1 from './../assets/images/background/bg1.jpg';
 import about29 from './../assets/images/about/about29.jpg';
 import about30 from './../assets/images/about/about30.jpg';
 import bg13 from './../assets/images/background/bg13.jpg';
-import pic1 from './../assets/images/team/pic1.jpg';
-import pic2 from './../assets/images/team/pic2.jpg';
-import pic3 from './../assets/images/team/pic3.jpg';
 import slider3 from './../assets/images/main-slider/slider3.jpg';
 import bg14 from './../assets/images/background/bg14.jpg';
 
-const teamblog = [
-    { image: pic1, title: 'MELENA MARSHALL' },
-    { image: pic2, title: 'DANIEL ORSON' },
-    { image: pic3, title: 'COLIN JAMESON' },
-];
 
 function Home3() {
     const form = useRef();

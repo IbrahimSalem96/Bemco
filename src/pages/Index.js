@@ -36,8 +36,8 @@ import BlogListSidebar from './BlogListSidebar';
 import BlogListLeftSidebar from './BlogListLeftSidebar';
 import BlogDetailsPostWide from './BlogDetailsPostWide';
 import BlogDetails from './BlogDetails';
-import WhyUs from './WhyUs'
-
+import WhyUs from './WhyUs';
+import Careers from './Careers';
 import {
 	EngineeringServices,
 	FacilityManagement,
@@ -66,7 +66,6 @@ function Index() {
 				<Switch>
 					{/* <Route path='/index-2' exact component={Home2} /> */}
 					<Route path='/' exact component={Home3} />
-
 					<Route path='/certificates-awards' exact component={CertificatesAwards} />
 					<Route path='/our-approvals' exact component={OurApprovals} />
 					<Route path='/our-clients' exact component={OurClients} />
@@ -77,7 +76,8 @@ function Index() {
 					{/* <Route path='/index-5' exact component={Home5} /> */}
 					<Route path='/why-us' exact component={WhyUs} />
 					<Route path='/about-us' exact component={AboutUs} />
-					<Route path='/about-me' exact component={AboutMe} />
+					<Route path='/careers' exact component={Careers} />
+					{/* <Route path='/about-me' exact component={AboutMe} /> */}
 					{/* <Route path='/coming-soon' exact component={ComingSoon} />
 					<Route path='/company-history' exact component={CompanyHistory} /> */}
 					<Route path='/contact-us' exact component={ContactUs} />

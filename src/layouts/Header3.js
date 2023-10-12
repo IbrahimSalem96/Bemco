@@ -32,7 +32,6 @@ export default function Header3() {
     return (
         <>
             <header className="site-header mo-left header style-3">
-
                 <div className="top-bar">
                     <div className="container-fluid">
                         <div className="d-flex justify-content-center align-items-center">
@@ -54,8 +53,7 @@ export default function Header3() {
                             {/* <!-- Nav Toggle Button --> */}
                             <button
                                 className={`navbar-toggler navicon justify-content-end ${openToggleBtn ? 'open' : 'collapsed'}`}
-                                onClick={() => setOpenToggleBtn(!openToggleBtn)}
-                            >
+                                onClick={() => setOpenToggleBtn(!openToggleBtn)}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -120,14 +118,14 @@ export default function Header3() {
                                     </li>
                                     <li className="sub-menu-down"><Link to={"./services"} classList="arrow"><span>Services</span></Link>
                                         <ul className="sub-menu" style={{ width: '270px' }}>
-                                            <li><Link to={'./operation-maintenance'}>Operation & Maintenance</Link></li>
-                                            <li><Link to={'./testing-commissioning'}>Testing & Commissioning</Link></li>
-                                            <li><Link to={'./installation-retrofitting'}>Installation & Retrofitting</Link></li>
-                                            <li><Link to={'./HVAC-TAB'}>HVAC & TAB</Link></li>
-                                            <li><Link to={'./facility-management'}>Facility Management</Link></li>
-                                            <li><Link to={'./engineering-services'}>Engineering Services</Link></li>
-                                            <li><Link to={'./supply-MV/LV'}>Supply MV/LV & Control Panels</Link></li>
-                                            <li><Link to={'./supply-spare-parts'}>Supply Spare Parts</Link></li>
+                                            <li><Link to={'/operation-maintenance'}>Operation & Maintenance</Link></li>
+                                            <li><Link to={'/testing-commissioning'}>Testing & Commissioning</Link></li>
+                                            <li><Link to={'/installation-retrofitting'}>Installation & Retrofitting</Link></li>
+                                            <li><Link to={'/HVAC-TAB'}>HVAC & TAB</Link></li>
+                                            <li><Link to={'/facility-management'}>Facility Management</Link></li>
+                                            <li><Link to={'/engineering-services'}>Engineering Services</Link></li>
+                                            <li><Link to={'/supply-MV/LV'}>Supply MV/LV & Control Panels</Link></li>
+                                            <li><Link to={'/supply-spare-parts'}>Supply Spare Parts</Link></li>
                                         </ul>
                                     </li>
                                     <li className="sub-menu-down"><Link to={"/why-us"}>Why Us ?</Link></li>
@@ -150,7 +148,7 @@ export default function Header3() {
                                             <li><Link to={'./blog-details'}>Blog Details</Link></li>
                                         </ul> */}
                                     </li>
-                                    <li className="sub-menu-down"><Link to={"./"}>Careers</Link></li>
+                                    <li className="sub-menu-down"><Link to={"./Careers"}>Careers</Link></li>
                                 </ul>
                                 <div className="dz-social-icon">
                                     <ul>
