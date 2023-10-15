@@ -22,14 +22,54 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 
 
 const industryBlog = [
-	{ title: 'Operation & Maintenance', image: pic1, page: '/operation-maintenance' },
-	{ title: 'Testing & Commissioning', image: pic2, page: '/testing-commissioning' },
-	{ title: 'Installation & Retrofitting', image: pic3, page: '/installation-retrofitting' },
-	{ title: 'HVAC & TAB', image: pic4, page: '/supply-MV/LV' },
-	{ title: 'Facility Management', image: pic5, page: '/HVAC-TAB' },
-	{ title: 'Engineering Services', image: pic6, page: '/facility-management' },
-	{ title: 'Supply MV/LV & Control Panels', image: pic7, page: '/engineering-services' },
-	{ title: 'Supply Spare Parts', image: pic8, page: '/supply-spare-parts' },
+	{
+		title: 'Operation & Maintenance',
+		image: pic1,
+		page: '/operation-maintenance',
+		des: 'Based in Saudi Arabia, Bemco Services is a leading provider of operations and maintenance (O&M) services for the Energy industry . . .'
+	},
+	{
+		title: 'Testing & Commissioning',
+		image: pic2,
+		page: '/testing-commissioning',
+		des: 'Bemco Services engineers expertly test and commission diverse electrical systems, including power plants, substations, GIS . . .'
+	},
+	{
+		title: 'Installation & Retrofitting',
+		image: pic3,
+		page: '/installation-retrofitting',
+		des: 'Based in Saudi Arabia, Bemco Services is a leading provider of operations and maintenance (O&M) services for the Energy industry . . .'
+	},
+	{
+		title: 'HVAC & TAB',
+		image: pic4,
+		page: '/HVAC-TAB',
+		des: 'Bemco Services specializes in ductwork installation for power plants, substations, and commercial projects in Saudi Arabia . . .'
+	},
+	{
+		title: 'Facility Management',
+		image: pic5,
+		page: '/facility-management',
+		des: 'Bemco Services in Saudi Arabia excels in Operations and Maintenance, optimizing facilities for comfort, safety, and productivity . . . '
+	},
+	{
+		title: 'Engineering Services',
+		image: pic6,
+		page: '/engineering-services',
+		des: 'test'
+	},
+	{
+		title: 'Supply MV/LV & Control Panels',
+		image: pic7,
+		page: '/supply-MV/L',
+		des: 'BSD & GEDAC, a leading Middle East provider, delivers customized power distribution solutions from own design, GE, Wistinghouse . . .'
+	},
+	{
+		title: 'Supply Spare Parts',
+		image: pic8,
+		page: '/supply-spare-parts',
+		des: 'test'
+	},
 ];
 
 
@@ -87,9 +127,9 @@ export default function IndustrialSlider() {
 				{industryBlog.map((information, index) => (
 					<SwiperSlide key={index}>
 						<div className="content-box2 overlay-shine">
-							<div className="dz-info">
+							<div className="dz-info mb-5">
 								<h3 className="title">{information.title}</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+								<p style={{ height: '100px' }}>{information.des}</p>
 							</div>
 							<div className="dz-media m-b30">
 								<img src={information.image} alt={information.title} style={{ height: '25vh' }} />
@@ -104,7 +144,7 @@ export default function IndustrialSlider() {
 					<div className="button-prev swiper-button-prev4" ref={navigationPrevRef} ><i className="las la-arrow-left"></i></div>
 					<div className="button-next swiper-button-next4" ref={navigationNextRef}><i className="las la-arrow-right"></i></div>
 				</div>
-			</Swiper>
+			</Swiper >
 
 		</>
 	)

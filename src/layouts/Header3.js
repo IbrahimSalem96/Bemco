@@ -48,7 +48,7 @@ export default function Header3() {
                         <div className="container-fluid clearfix">
                             {/* <!-- Website Logo --> */}
                             <div className="logo-header mostion logo-white">
-                                <Link to={"./"}><img src={logowhite} alt="Logo" width='90' height='9d0' /></Link>
+                                <Link to={"/"}><img src={logowhite} alt="Logo" width='90' height='9d0' /></Link>
                             </div>
                             {/* <!-- Nav Toggle Button --> */}
                             <button
@@ -78,21 +78,19 @@ export default function Header3() {
                             {/* <!-- Extra Nav --> */}
                             <div className={`header-nav navbar-collapse justify-content-start ${openToggleBtn ? ' collapse show' : ' collapse'}`}>
                                 <div className="logo-header logo-dark">
-                                    <Link to={"./"}><img src={logo} alt="" /></Link>
+                                    <Link to={"/"}><img src={logo} alt="logo" /></Link>
                                 </div>
                                 <ul className="nav navbar-nav navbar navbar-left">
-                                    <li className="sub-menu-down"><Link to={"./"}>Home</Link></li>
+                                    <li className="sub-menu-down"><Link to={"/"}>Home</Link></li>
                                     <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Company</span></Link>
                                         <ul className="sub-menu">
-                                            <li><Link to={"./about-us"}>Our Profile</Link></li>
-                                            <li><Link to={"./our-commitment"}>Our Commitment</Link></li>
-                                            <li><Link to={"./quality-safety-policy"}>Quality & Safety Policy</Link></li>
-                                            <li><Link to={'./certificates-awards'}>Certificates & Awards</Link></li>
-                                            <li><Link to={'./our-partners'}>Our Partners</Link></li>
-                                            <li><Link to={'./our-approvals'}>Our Approvals</Link></li>
-                                            <li><Link to={'./our-clients'}>Our Clients</Link></li>
-
-
+                                            <li><Link to={"/about-us"}>Our Profile</Link></li>
+                                            <li><Link to={"/our-commitment"}>Our Commitment</Link></li>
+                                            <li><Link to={"/quality-safety-policy"}>Quality & Safety Policy</Link></li>
+                                            <li><Link to={'/certificates-awards'}>Certificates & Awards</Link></li>
+                                            <li><Link to={'/our-partners'}>Our Partners</Link></li>
+                                            <li><Link to={'/our-approvals'}>Our Approvals</Link></li>
+                                            <li><Link to={'/our-clients'}>Our Clients</Link></li>
                                         </ul>
                                         {/* <li> <Link to={"#"}>Pages</Link>
                                                 <ul>
@@ -131,11 +129,11 @@ export default function Header3() {
                                     <li className="sub-menu-down"><Link to={"/why-us"}>Why Us ?</Link></li>
                                     <li className="sub-menu-down"><Link to={"#"} classList="arrow"><span>Our Key Projects</span></Link>
                                         <ul className="sub-menu">
-                                            <li><Link to={'./shop-grid-3'}>Shop Grid 3</Link></li>
-                                            <li><Link to={'./product-details'}>Product Details</Link></li>
-                                            <li><Link to={'./shop-wishlist'}>Wishlist</Link></li>
-                                            <li><Link to={'./shop-checkout'}>Checkout</Link></li>
-                                            <li><Link to={'./shop-cart'}>Cart</Link></li>
+                                            <li><Link to={'/shop-grid-3'}>Shop Grid 3</Link></li>
+                                            <li><Link to={'/product-details'}>Product Details</Link></li>
+                                            <li><Link to={'/shop-wishlist'}>Wishlist</Link></li>
+                                            <li><Link to={'/shop-checkout'}>Checkout</Link></li>
+                                            <li><Link to={'/shop-cart'}>Cart</Link></li>
                                         </ul>
                                     </li>
                                     <li className="sub-menu-down"><Link to={"./blog-list-sidebar"}>Articles</Link>

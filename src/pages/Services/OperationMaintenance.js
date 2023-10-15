@@ -19,7 +19,7 @@ export default function OperationMaintenance() {
             <Header3 />
 
             <div className="page-content bg-white">
-                <PageTitle title='Testing & Commissioning' parentPage='Home' childPage='Services' />
+                <PageTitle title='Operations & Maintenance' parentPage='Home' childPage='Services' />
 
                 <section className="section-full content-inner bg-white">
                     <div className="container">

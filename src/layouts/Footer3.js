@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logowhite from './../assets/images/logo-white.png';
+import logowhite from './../assets/Bemco/logo_bemco.png';
 import recentBlog1 from './../assets/images/blog/recent-blog/pic1.jpg';
 import recentBlog2 from './../assets/images/blog/recent-blog/pic2.jpg';
 
@@ -15,7 +15,7 @@ export default function Footer3() {
                             <div className="col-xl-4 col-lg-4 col-sm-8 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <div className="widget widget_about">
                                     <div className="footer-logo logo-white">
-                                        <Link to={'./'}><img src={logowhite} alt="" /></Link>
+                                        <Link to={'/'}><img src={logowhite} alt="logowhite" /></Link>
                                     </div>
                                     <div className="widget widget_getintuch">
                                         <ul>
@@ -25,11 +25,12 @@ export default function Footer3() {
                                             </li>
                                             <li>
                                                 <i className="flaticon-call"></i>
-                                                <span>1234 456 7895 <br /> 1234 456 7895</span>
+                                                <span>1234 456 7895</span>
                                             </li>
                                             <li>
                                                 <i className="flaticon-chat-1"></i>
-                                                <span>info@example.com <br />services@example.com</span>
+                                                {/* <span>Services@Bemco.net<br />services@example.com</span> */}
+                                                <span>Services@Bemco.net</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -39,11 +40,11 @@ export default function Footer3() {
                                 <div className="widget widget_services">
                                     <h4 className="footer-title">Our Links</h4>
                                     <ul>
-                                        <li><Link to={"./"}>Home</Link></li>
-                                        <li><Link to={"./about-us"}>About Us</Link></li>
-                                        <li><Link to={"./services"}>Services</Link></li>
-                                        <li><Link to={"./blog-grid"}>News</Link></li>
-                                        <li><Link to={"./contact-us"}>Contact Us</Link></li>
+                                        <li><Link to={"/"}>Home</Link></li>
+                                        <li><Link to={"/about-us"}>About Us</Link></li>
+                                        <li><Link to={"/services"}>Services</Link></li>
+                                        <li><Link to={"/blog-grid"}>News</Link></li>
+                                        <li><Link to={"#contact-us"}>Contact Us</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,14 +101,15 @@ export default function Footer3() {
                     <div className="footer-bottom">
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-md-8 text-md-start text-center">
-                                <span className="copyright-text">Copyright © 2022 <a href="https://dexignzone.com/" target="_blank" rel="noreferrer" >DexignZone</a>. All rights reserved.</span>
+                                <span className="copyright-text">Copyright © 2022 <a href="/" target="_blank" rel="noreferrer" > Bemco Services</a> . All rights reserved.</span>
                             </div>
                             <div className="col-lg-6 col-md-4 text-md-end text-center">
                                 <div className="dz-social-icon float-md-end float-center">
                                     <ul className="justify-content-center">
-                                        <li><a className="fab fa-facebook-f" target="_blank" rel="noreferrer" href="https://www.facebook.com/"></a></li>
-                                        <li><a className="fab fa-instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/?hl=en"></a></li>
-                                        <li><a className="fab fa-twitter" target="_blank" rel="noreferrer" href="https://twitter.com/?lang=en"></a></li>
+                                        <li><a className="fab fa-facebook-f" target="_blank" rel="noreferrer" href="https://www.facebook.com/bemcoservices"></a></li>
+                                        <li><a className="fab fa-instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/bemcoservices/"></a></li>
+                                        <li><a className="fab fa-twitter" target="_blank" rel="noreferrer" href="https://twitter.com/bemcoservices"></a></li>
+                                        <li><a className="fab fa-linkedin" target="_blank" rel="noreferrer" href="https://twitter.com/bemcoservices"></a></li>
                                     </ul>
                                 </div>
                             </div>

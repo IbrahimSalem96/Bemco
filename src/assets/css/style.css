@@ -719,6 +719,12 @@ progress {
   margin-left: auto;
 }
 
+/* Ibrahim Salem all text in articale is justify */
+article,
+p {
+  text-align: justify;
+}
+
 @media (min-width: 576px) {
 
   .container,

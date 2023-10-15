@@ -21,9 +21,12 @@ SwiperCore.use([Parallax, Thumbs, FreeMode, Autoplay, Pagination]);
 
 
 const aboutBlog = [
-	{ title: 'About Our Agency', datatitle: 'Green technologies', },
-	{ title: 'About Our History', datatitle: 'Chemical Researching' },
-	{ title: 'About Our Agency', datatitle: 'Automotive manufacturing' },
+	{
+		title: 'About Our Mission', datatitle: 'Mission', text: 'Cooperative companion for operation and maintenance, we take care of Energy, Generation, Desalination, and the district cooling plants, with a massive listing of innovative tools for the electrical and mechanical systems'
+	},
+	{
+		title: 'About Our Vision', datatitle: 'Vision', text: 'To provide better services through professional team using innovative technology and tools'
+	},
 ];
 
 const aboutbgBlog = [
@@ -76,7 +79,7 @@ export default function AboutSlider() {
 									<div className="section-head style-1">
 										<h6 className="sub-title text-primary" data-swiper-parallax="-500">{data.title}</h6>
 										<h2 className="title m-b20 text-white" data-swiper-parallax="-1000">Building trust Takes a leap of Faith</h2>
-										<p className="text-white" data-swiper-parallax="-1500">Lorem ipsum dolor sit am adipi we help you ensure everyone is in the right jobs sicing elit, sed do consulting firms Et leggings across the nation tempor Lorem ipsum dolor sit am adipi we help </p>
+										<p className="text-white" data-swiper-parallax="-1500">{data.text}</p>
 									</div>
 									<Link to={"./about-us"} data-swiper-parallax="-2000" className="btn btn-primary btn-border-white btn-border m-r10 m-b10">ABOUT US</Link>
 								</SwiperSlide>

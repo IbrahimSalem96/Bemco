@@ -35,15 +35,17 @@ export default function SupplyControlPanels() {
                                 <h2 className="title">Supply MV/LV & Control Panels</h2>
 
                                 <img src={image} alt='Extra, High & Medium Voltage Substation' className='w-100 mb-3' style={{ height: '50vh' }} />
-                                {/* <p className="m-b10">
-                                </p> */}
-                                <ul className="list-check primary m-b30 ms-5">
-                                    <li>test</li>
-                                    <li>test</li>
-                                    <li>test</li>
-                                    <li>test</li>
-                                </ul>
+                                <p className="m-b10">
+                                    Bemco Services and Gulf Electrical Distribution Apparatuses Co. Ltd. (BSD & GEDAC) is a leading providers of power distribution equipment, solutions and services in the Middle East. It offers products from its own design, GE and Wistinghouse IEC & ANSI/NEMA products and other international partners such as EFACEC (Portugal).
+                                </p>
 
+                                <p className="m-b10">
+                                    BSD & GEDAC has a long-term strategic partnership with the OEM's Manufacurer, enabling it to offer solutions approved Low Voltage Switchboard and Medium Voltage Switchgear technologies. GEDAC also manufactures and supplies its own type tested LV Switchboard and MV Switchgear in the region.
+                                </p>
+
+                                <p className="m-b10">
+                                    GEDAC operates a 21000m2 factory since 1978, delivering turnkey customized engineered solutions for Low and Medium Voltage power distribution, protection & control and after sales services. It follows International Standards such as IEC, ANSI/NEMA and ISO.
+                                </p>
                             </div>
                         </div>
                     </div>

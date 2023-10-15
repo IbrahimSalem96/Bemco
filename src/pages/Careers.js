@@ -2,7 +2,7 @@ import React from 'react';
 
 //Layouts
 import Header3 from './../layouts/Header3';
-import Footer from './../layouts/Footer2';
+import Footer3 from './../layouts/Footer3';
 import PageTitle from './../layouts/PageTitle';
 
 //components
@@ -65,7 +65,7 @@ function Careers() {
                     </div>
                 </section >
             </div >
-            <Footer />
+            <Footer3 />
         </>
     )
 }
